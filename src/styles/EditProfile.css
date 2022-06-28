@@ -1,0 +1,168 @@
+.edit {
+    width: 80%;
+    max-width: 1600px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    /* overflow: hidden; */
+
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.edit__container {
+    height: 100%;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Backgrounds */
+.edit__transparent-backgroud {
+    padding: 15px;
+
+    color: #fff;
+}
+.edit__white-background {
+    background-color: #f0f0f0;
+    padding: 15px;
+
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    flex: 1 1 100px;
+}
+
+@media screen and (max-width: 450px) {
+    .edit {
+        width: 100%;
+    }
+
+    .edit__white-background {
+        height: 100%;
+    }
+}
+/* Transparent part */
+.edit__info {
+
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+.edit__title {
+    text-align: center;
+    font-size: 56px;
+}
+
+@media screen and (max-width: 500px) {
+    .edit__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .edit__title {
+        font-size: 74px;
+    } 
+}
+
+.edit__form,
+.form__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__label {
+    font-size: 17px;
+    color: #0083B0;
+    font-weight: 700px;
+}
+
+.form__text-input {
+    border: 1px solid #0083B0;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    color: #0083B0;
+}
+
+.form__error {
+    margin: 5px 0;
+    color: #93291E;
+}
+.form__success {
+    margin: 5px 0;
+    color: #38ef7d;
+}
+
+.form__text {
+    margin-left: 6%;
+    align-self: flex-start;
+    color: #0083B0;
+}
+
+.form__avatars {
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form__avatar {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #c2c2c2;
+    border-radius: 50%;
+}
+
+.form__avatar_selected {
+    border: 2px solid #0083B0;
+}
+
+.form__avatar_active {
+    border: 2px solid #F37335;
+}
+
+.form__button {
+    margin-top: 20px;
+    padding: 10px 30px;
+
+    align-self: flex-end;
+
+    border: 1px solid #F37335;
+    border-radius: 10px;
+    color: #F37335;
+    background-color: rgba(253, 200, 48, 0.3);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .form__avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form__avatar {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .form__avatar {
+        width: 200px;
+        height: 200px;
+    }
+}

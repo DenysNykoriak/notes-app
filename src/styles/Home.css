@@ -1,0 +1,137 @@
+.home {
+    width: 80%;
+    max-width: 1600px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    /* overflow: hidden; */
+
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.home__container {
+    height: 100%;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Backgrounds */
+.home__transparent-backgroud {
+    padding: 15px;
+
+    color: #fff;
+
+    flex: 1 1 200px;
+
+    display: flex;
+    align-items: flex-start;
+}
+.home__white-background {
+    background-color: #f0f0f0;
+    padding: 15px;
+
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    flex: 0 0 50px;
+}
+
+@media screen and (max-width: 450px) {
+    .home {
+        width: 100%;
+    }
+
+    .home__white-background {
+        height: 100%;
+    }
+}
+
+.home__info {
+
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.home__title {
+    text-align: center;
+    font-size: calc(3vw + 3vh + 2vmin);
+}
+.home__subtitle {
+    font-size: calc(1vw + 1vh + 2vmin);
+    margin: 10px 5%;
+    color: #00779e;
+
+    text-align: center;
+}
+
+.home__buttons {
+    display: flex;
+    justify-content: center;
+
+    gap:10px;
+
+    margin: 20px 30% 0;
+}
+
+.home__start-button {
+
+    flex: 1 1 100px;
+
+    padding: 0px 10px;
+
+    border: 0;
+    background-image: linear-gradient(45deg, #e2e6ff, #6dcdff);
+    border-radius: 0px 20px 20px 20px;
+}
+
+.home__edit-button {
+    display: block;
+
+    flex: 1 1 100px;
+
+    padding: 0px 10px;
+
+    border: 0;
+    background-image: linear-gradient(225deg, #e2e6ff, #6dcdff);
+    border-radius: 20px 0px 20px 20px;
+}
+
+.home__start-link {
+    display: block;
+
+    padding: 10px 0;
+
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.home__edit-link {
+    display: block;
+
+    padding: 10px 0;
+
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__author {
+    font-size: 15px;
+    color: #00779e;
+    text-align: center;
+}
